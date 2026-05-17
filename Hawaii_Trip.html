@@ -251,15 +251,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
   const segments = [
-    { label: 'TLV \u2192 LA \u2192 Seattle \u2708', start: 0,  end: 1  },
-    { label: 'Seattle \u2708',                       start: 1,  end: 3  },
-    { label: 'Vancouver 🚇',                     start: 3,  end: 6  },
-    { label: "Hawaii O'ahu (Honolulu) \u2708",       start: 6,  end: 11 },
-    { label: 'Hawaii Maui \u2708',                   start: 11, end: 17 },
-    { label: 'Hawaii Big Island \u2708',             start: 17, end: 22 },
+    { label: 'TLV \u2192 LA \u2192 Seattle \u2708', start: 0,  end: 0  },
+    { label: 'Seattle \u2708',                       start: 1,  end: 4  },
+    { label: 'Vancouver 🚇',                     start: 4,  end: 8  },
+    { label: "Hawaii O'ahu (Honolulu) \u2708",       start: 8,  end: 14 },
+    { label: 'Hawaii Big Island \u2708',                   start: 14, end: 19 },
+    { label: 'Hawaii Maui \u2708',             start: 19, end: 23 },
   ];
-  const baseDate = new Date('2026-08-07');
-  const totalDays = 23;
+  const baseDate = new Date('2026-08-06');
+  const totalDays = 24;
   const tickLabels = [];
   for (let i = 0; i <= totalDays; i++) {
     const d = new Date(baseDate);
